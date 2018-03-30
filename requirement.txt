@@ -1,0 +1,23 @@
+django
+MySQL-python
+
+项目的初始化：
+初始化项目：django-admin startproject
+初始化APP：在项目目录中：python manage.py startapp app_name
+
+部署static和templates
+调整setting配置
+
+同步models.py到数据库(确保setting中已将app配置INSTALLED_APPS)：
+python manage.py makemigrations app_name
+python manage.py migrate
+
+创建后台管理账号：
+python manage.py createsuperuser
+
+启用自带服务器
+python manage.py runserver ip:port
+
+部署后台
+admin.py
+
